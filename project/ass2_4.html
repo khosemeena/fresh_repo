@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title> Form </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: right;
+            top: 0px;
+			bottom:80px;
+            background: rgba(0, 0, 0, 0.2) ;
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+        }
+ 
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+ 
+        .nav-list li {
+            margin-right: 2px;
+			margin-left: 0%;
+        }
+ 
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+ 
+        .nav-list li a {
+			display:flex;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+			float:right;
+        }
+ 
+        .nav-list li a:hover {
+            color: #ffd700;
+            /* Change the color on hover */
+        }
+ 
+        .rightNav {
+            text-align: right;
+        }
+       
+
+#div1
+{
+   padding:20px;
+   margin:40px;
+}
+#div2
+{
+   text_decoration:underline;
+   opacity:0.6;
+}
+label
+{
+   width:140px;
+   display:inline-block;
+   text-align:right;
+}
+form
+{
+   padding:4%;
+   margin-top:5%;
+   margin-right:25%;
+   margin-bottom:1%;
+   margin-left:10%;
+   border:1px solid black;
+   background-image:linear-gradient(white,gray);
+   display:flex;
+   opacity:0.9;
+}
+#signoutbutton
+{
+  background-color:green;
+}
+#button{
+    width:215px;
+	display:inline-block;
+	text-align:right;
+	
+	}
+</style>
+</head>
+<body>
+<body background="event_image.jpg">
+<nav class="navbar">
+
+		<div class="logo" href="#"><i class="fa fa-chrome"></i>
+		</div>
+        <ul class="nav-list">
+			<li><a href="D:\clg_event_project\assign7.html"><i class="fa fa-home"></i>&nbsp<U>Home</U></a></li>
+			
+&nbsp&nbsp<li><a href="#Services"><i class="fa fa-group"></i>&nbsp<U>About Us</U></a></li>
+           <!--<li><a href="Gallery"><i class="fa fa-image"></i>&nbsp<U>Gallery</U></a></li>-->
+           &nbsp&nbsp <li><a href="#Reviews"><i class="fa fa-phone"></i>&nbsp<U>Contact</U><a></li>
+			&nbsp&nbsp<li><a href="D:\clg_event_project\ass2_4.html"><U><i class="fa fa-user-plus">&nbsp</i>Registration</U></a></li>
+			&nbsp&nbsp<li><a href="D:\clg_event_project\login1.html"><U><i class="fa fa-user-circle-o">&nbsp</i>login</U></a></li>
+			
+        </ul>
+    </nav>
+<form>
+<text-align:left>
+<div id="div2">
+<h1>Sign Up</h1>
+<h2>It's free and anyone can join</h2>
+</div>
+<div id="div1">
+<label> First Name</label>
+<input type="text" id="first" value="">
+<br><br>
+<label> Last Name</label>
+<input type="text" id="last" value="">
+<br><br>
+<label> Email Address</label>
+<input type="Email" id="emailaddress" >
+<br><br>
+<label> New Password</label>
+<input type="password" id="password">
+<br><br>
+<label> I am </label>
+<select>
+<option value="select sex">select sex</option>
+<option value="male">Male</option>
+<option value="select sex">Female</option>
+</select><br><br>
+<label> Date Of Birth </label>
+<input type="Date" name="date" value="">
+<br><br>
+<div id="button"><br>
+<button id="signoutbutton">Sign In</button>
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Festival Gallery</title>
+<style>
+  .gallery {
+    display: none;
+  }
+  .navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: right;
+            top: 0px;
+			bottom:80px;
+            background: rgba(0, 0, 0, 0.2) ;
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+        }
+ 
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+ 
+        .nav-list li {
+            margin-right: 2px;
+			margin-left: 0%;
+        }
+ 
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+ 
+        .nav-list li a {
+			display:flex;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+			float:right;
+        }
+ 
+        .nav-list li a:hover {
+            color: #ffd700;
+            /* Change the color on hover */
+        }
+ 
+        .rightNav {
+            text-align: right;
+        }
+        #spandan{
+          color:aliceblue;
+        }
+        #muktchhand{
+          color:rgb(192, 210, 226);
+        }
+        #book_festivals{
+          color:rgb(221, 233, 195);
+        }
+</style>
+</head>
+    <body background="D:\Git Session\git-hub-demo\project\event_image.jpg">
+<nav class="navbar">
+
+		<div class="logo" href="#"><i class="fa fa-chrome"></i>
+		</div>
+        <ul class="nav-list">
+			<li><a href="D:\Git Session\git-hub-demo\project\assign7.html"><i class="fa fa-home"></i>&nbsp<U>Home</U></a></li>
+			
+&nbsp&nbsp<li><a href="#Services"><i class="fa fa-group"></i>&nbsp<U>About Us</U></a></li>
+           <!--<li><a href="Gallery"><i class="fa fa-image"></i>&nbsp<U>Gallery</U></a></li>-->
+           &nbsp&nbsp <li><a href="D:\Git Session\git-hub-demo\project\event-tab.html"><i class="fa fa-caret-down"></i>&nbsp<U>event</U><a></li>
+			&nbsp&nbsp<li><a href="D:\Git Session\git-hub-demo\project\ass2_4.html"><u><i class="fa fa-user-plus">&nbsp</i>Registration</u></a></li>
+			&nbsp&nbsp<li><a href="D:\Git Session\git-hub-demo\project\login1.html"><U><i class="fa fa-user-circle-o">&nbsp</i>login</U></a></li>
+			
+        </ul>
+    </nav>
+
+<select id="festivals" onchange="showGallery()">
+  <option>Select Event</option>
+  <option value="spandan">Spandan</option>
+  <option value="muktchhand">Muktchhand</option>
+  <option value="book_festivals">Book Festivals</option>
+</select>
+
+<div id="spandan" class="gallery">
+  <center><h2>Spandan</h2>
+  <p>Description of Spandan festival...</p>
+</center>
+  <!-- Photo gallery for Spandan festival -->
+</div>
+
+<div id="muktchhand" class="gallery">
+  <h2>Muktchhand</h2>
+  <p>Description of Muktchhand festival...</p>
+  <!-- Photo gallery for Muktchhand festival -->
+</div>
+
+<div id="book_festivals" class="gallery">
+  <h2>Book Festivals</h2>
+  <p >Description of Book Festivals...</p>
+  <!-- Photo gallery for Book Festivals -->
+</div>
+
+<script>
+function showGallery() {
+  var selectedFestival = document.getElementById("festivals").value;
+  var galleries = document.getElementsByClassName("gallery");
+  for (var i = 0; i < galleries.length; i++) {
+    galleries[i].style.display = "none";
+  }
+  document.getElementById(selectedFestival).style.display = "block";
+}
+</script>
+
+</body>
+</html>

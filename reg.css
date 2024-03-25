@@ -134,3 +134,50 @@ box-shadow:inset 1px 1px 5px
 
 rgba(0,0,0,0.3);
 }
+
+
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: right;
+    top: 0px;
+    bottom:80px;
+    background: rgba(0, 0, 0, 0.2) ;
+    background-blend-mode: darken;
+    background-size: cover;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 2px;
+    margin-left: 0%;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    display:flex;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    float:right;
+}
+
+.nav-list li a:hover {
+    color: #ffd700;
+    /* Change the color on hover */
+}
+
+.rightNav {
+    text-align: right;
+}

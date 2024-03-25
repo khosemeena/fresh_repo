@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title> Form </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: right;
+            top: 0px;
+			bottom:80px;
+            background: rgba(0, 0, 0, 0.2) ;
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+        }
+ 
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+ 
+        .nav-list li {
+            margin-right: 2px;
+			margin-left: 0%;
+        }
+ 
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+ 
+        .nav-list li a {
+			display:flex;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+			float:right;
+        }
+ 
+        .nav-list li a:hover {
+            color: #ffd700;
+            /* Change the color on hover */
+        }
+ 
+        .rightNav {
+            text-align: right;
+        }
+       
+
+*{
+
+margin: 0;
+
+padding: 0;
+
+}
+
+
+div.main{
+
+width: 400px;
+
+margin: 100px auto 0px auto;
+
+}
+
+h2{
+
+    text-align: center;
+
+    padding: 20px; 
+
+}
+
+div.register{
+
+background-color:rgba(0,0,0,0.5);
+
+width: 100%;
+
+font-size: 18px;
+
+border-radius: 10px;
+
+border:1px soid rgba(255,255,255,0.3);
+
+box-show: 2px 2px 15px rgba(0,0,0,0.3);
+
+color:#fff;
+
+}
+form#register{
+
+margin: 40px;
+
+}
+
+label {
+
+font-family: sans-serif;
+
+font-size: 18px;
+
+font-style: italic;
+
+}
+
+input#name {
+
+width: 300px;
+
+border:1px solid #ddd;
+
+border-radius: 3px;
+
+outline: 0;
+
+padding: 7px;
+
+background-color: #23fff;
+
+box-shadow:inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+
+#sign{
+
+width: 200px;
+
+padding: 7px;
+
+font-size: 16px;
+
+font-family: sans-serif;
+
+font-weight: 600;
+
+border-radius: 3px;
+
+background-color: rgba(250,100,0,0.8);
+
+color: #fff;
+
+cursor: pointer;
+
+border: 1px solid rgba(255,255,255,0.3);
+
+box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+
+}
+label, span,h2 {
+
+text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+
+}
+.src{
+
+width: 300px;
+
+border:1px solid #ddd;
+
+border-radius: 3px;
+
+outline: 0;
+
+padding: 7px;
+
+background-color: #23fff;
+
+box-shadow:inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+<body background="event_image.jpg">
+<nav class="navbar">
+
+		<div class="logo" href="#"><i class="fa fa-chrome"></i>
+		</div>
+        <ul class="nav-list">
+			<li><a href="D:\clg_event_project\assign7.html"><i class="fa fa-home"></i>&nbsp<U>Home</U></a></li>
+			
+&nbsp&nbsp<li><a href="#Services"><i class="fa fa-group"></i>&nbsp<U>About Us</U></a></li>
+           <!--<li><a href="Gallery"><i class="fa fa-image"></i>&nbsp<U>Gallery</U></a></li>-->
+           &nbsp&nbsp <li><a href="#Reviews"><i class="fa fa-phone"></i>&nbsp<U>Contact</U><a></li>
+			&nbsp&nbsp<li><a href="D:\clg_event_project\ass2_4.html"><U><i class="fa fa-user-plus">&nbsp</i>Registration</U></a></li>
+			&nbsp&nbsp<li><a href="D:\clg_event_project\login1.html"><U><i class="fa fa-user-circle-o">&nbsp</i>login</U></a></li>
+			
+        </ul>
+    </nav>
+    <div class="main">
+
+        <div class="register">
+        
+        <h2>Register Here</h2>
+        
+        <form id="register" method="post">
+        
+        <label>First Name : </label>
+        
+        <br>
+        
+        <input type="text" name="fname"
+        
+        id="name" placeholder="Enter Your
+        
+        First Name">
+        
+        <br><br>
+        
+        <label>Last Name : </label>
+        <br>
+        
+        <input type="text" name="lname" id="name" placeholder="Enter Your Last Name">
+        
+        <br><br>
+        <label>Email : </label>
+        <br>
+        <input type="email" name="email" id="name" placeholder="Enter Your Valid Email">
+        <br><br>
+        
+        <label>Password </label>
+         &nbsp; &nbsp; &nbsp;
+        
+        <input type="password" id="name" placeholder="Enter Your Password" > &nbsp;
+        
+        <br>
+        <label> Comfirm Password </label>
+         &nbsp; &nbsp; &nbsp;
+        
+        <input type="cpassword" id="name" placeholder="Enter Your Confirm Password"> &nbsp;
+        
+        <br><br>
+        <label>Department: </label>
+        <div class="src">
+        <input list="dept">
+        <datalist id="dept">
+        <option value="Mathematics">
+        <option value="Staticstics">
+        <option value="Electronics Science">
+        <option value="Chemistry">
+        <option value="Physics">
+        </datalist>
+        </div><br><br>
+        <div id="button"><br>
+        <button id="sign">Sign in </button>
+        </form>
+        </div>
+        </div>
+</body>
+</html>

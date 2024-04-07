@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Registration Form</title>
+<link rel="stylesheet" href="reg.css">
+
+</head>
+
+<body background="event_image.jpg">
+<nav class="navbar">
+
+		<div class="logo" href="#"><i class="fa fa-chrome"></i>
+		</div>
+        <ul class="nav-list">
+			<li><a href="Home_pg.html"><i class="fa fa-home"></i>&nbsp<U>Home</U></a></li>
+			
+&nbsp&nbsp<li><a href="#Services"><i class="fa fa-group"></i>&nbsp<U>About Us</U></a></li>
+           <!--<li><a href="Gallery"><i class="fa fa-image"></i>&nbsp<U>Gallery</U></a></li>-->
+           &nbsp&nbsp <li><a href="event-tab.html"><i class="fa fa-caret-down"></i>&nbsp<U>event</U><a></li>
+			&nbsp&nbsp<li><a href="res.html"><u><i class="fa fa-user-plus">&nbsp</i>Registration</u></a></li>
+			&nbsp&nbsp<li><a href="login.html"><U><i class="fa fa-user-circle-o">&nbsp</i>login</U></a></li>
+			
+        </ul>
+    </nav>
+        
+
+<div class="main">
+
+<div class="register">
+
+<h2>Register Here</h2>
+
+<form id="register" action="register.php" method="post" >
+
+<label>First Name : </label>
+
+<br>
+
+<input type="text" name="fname"
+
+id="name" placeholder="Enter Your
+
+First Name" required>
+
+<br><br>
+
+<label>Last Name : </label>
+<br>
+
+<input type="text" name="lname" id="name" placeholder="Enter Your Last Name" required>
+
+<br><br>
+<label>Email : </label>
+<br>
+<input type="email" name="email" id="name" placeholder="Enter Your Valid Email" required>
+<br><br>
+
+<label>Password </label>
+ &nbsp; &nbsp; &nbsp;
+
+<input type="password" name="pass" id="name" placeholder="Enter Your Password" required> &nbsp;
+
+<br>
+<!--<label> Confirm Password </label>
+ &nbsp; &nbsp; &nbsp;
+
+<input type="cpassword" name="pass" id="name" placeholder="Enter Your Confirm Password"> &nbsp;
+-->
+
+<label> Department: </label><br>
+<input type="text" name="department" id="name" placeholder="Enter your department name" ><br><br>
+<input type="submit" id="sign" value="Submit"> </button>
+<p> Already have an account? Then <a href="login.html">Login here</a></p>
+
+</form>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale-1">
+
+<title>Form Login and Register</title>
+
+
+
+
+<html>
+<head>
+    <style>
+        <style>
+            body {
+
+                background: url (background.PNG);
+               
+               width: 100%;
+               
+               height: 100vh;
+               
+               font-family: sans-serif;
+               }
+               
+               /*.signup{
+                   width: 360px;
+               
+                   height: 800px;
+               
+                   margin: auto;
+               
+                   background:white;
+               
+                   border-radius: 3px;
+               }*/
+               
+               .login{
+                   width: 360px;
+               
+                   height: 320px;
+               
+                   margin: auto;
+               
+                   background:white;
+               
+                   border-radius: 3px;
+               }
+                   
+               
+               h1{
+                   text-algin:center;
+               
+               }
+               
+               h4{
+               
+               text-align: center;
+               
+               text-align: center;
+               
+               padding-top: 15px;
+               
+               }
+               
+               form{
+               
+               width: 300px;
+               
+               margin-left: 20px;
+               }
+               
+               form label{
+               
+               
+               
+               display: flex;
+               
+               margin-top: 20px;
+               
+               font-size: 18px;
+               
+               }   form input{
+               
+               width: 100%;
+               
+               padding: 7px;
+               
+               
+               
+               
+               
+               border: none;
+               
+               border: 1px solid gray;
+               
+               border-radius: 6px;
+               
+               
+               
+               outline: none;
+               
+               style.css-sign up - Visual Studio Code
+               
+               }    
+               input[type="submit"]{
+                width: 320px;
+               
+               
+               
+               height: 35px;
+               
+               margin-top: 20px;
+               
+               border: none;
+               
+               background-color: #ff7200;
+               
+               color: white;
+               
+               font-size: 18px;
+               
+               cursor: pointer;
+               }    
+               
+               Input[type="submit"]:hover{
+               
+               color: white;
+               
+               
+               background: rgb(13, 211, 247);
+               
+                }
+               
+               
+               
+               P { text-align: center;
+               
+               padding-top: 20px;
+               
+                font-size: 15px;
+               
+               }
+               
+               .navbar {
+                   display: flex;
+                   position: sticky;
+                   align-items: center;
+                   justify-content: right;
+                   top: 0px;
+                   bottom:80px;
+                   background: rgba(0, 0, 0, 0.2) ;
+                   background-blend-mode: darken;
+                   background-size: cover;
+                   color: white;
+                   padding: 10px 20px;
+               }
+               
+               .nav-list {
+                   display: flex;
+                   list-style: none;
+               }
+               
+               .nav-list li {
+                   margin-right: 2px;
+                   margin-left: 0%;
+               }
+               
+               .nav-list li:last-child {
+                   margin-right: 0;
+               }
+               
+               .nav-list li a {
+                   display:flex;
+                   text-decoration: none;
+                   color: white;
+                   font-size: 18px;
+                   transition: color 0.3s ease-in-out;
+                   float:right;
+               }
+               
+               .nav-list li a:hover {
+                   color: #ffd700;
+                   /* Change the color on hover */
+               }
+               
+               .rightNav {
+                   text-align: right;
+               }
+            .navbar {
+                display: flex;
+                position: sticky;
+                align-items: center;
+                justify-content: right;
+                top: 0px;
+                bottom:80px;
+                background: rgba(0, 0, 0, 0.2) ;
+                background-blend-mode: darken;
+                background-size: cover;
+                color: white;
+                padding: 10px 20px;
+            }
+            
+            .nav-list {
+                display: flex;
+                list-style: none;
+            }
+            
+            .nav-list li {
+                margin-right: 2px;
+                margin-left: 0%;
+            }
+            
+            .nav-list li:last-child {
+                margin-right: 0;
+            }
+            
+            .nav-list li a {
+                display:flex;
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                transition: color 0.3s ease-in-out;
+                float:right;
+            }
+            
+            .nav-list li a:hover {
+                color: #ffd700;
+                /* Change the color on hover */
+            }
+            
+            .rightNav {
+                text-align: right;
+            }
+    </style>
+</head>
+
+<body background="event_image.jpg">
+<nav class="navbar">
+
+		<div class="logo" href="#"><i class="fa fa-chrome"></i>
+		</div>
+        <ul class="nav-list">
+			<li><a href="Home_pg.html"><i class="fa fa-home"></i>&nbsp<U>Home</U></a></li>
+			
+&nbsp&nbsp<li><a href="#Services"><i class="fa fa-group"></i>&nbsp<U>About Us</U></a></li>
+           <!--<li><a href="Gallery"><i class="fa fa-image"></i>&nbsp<U>Gallery</U></a></li>-->
+           &nbsp&nbsp <li><a href="event-tab.html"><i class="fa fa-caret-down"></i>&nbsp<U>event</U><a></li>
+			&nbsp&nbsp<li><a href="res.html"><u><i class="fa fa-user-plus">&nbsp</i>Registration</u></a></li>
+			&nbsp&nbsp<li><a href="login.html"><U><i class="fa fa-user-circle-o">&nbsp</i>login</U></a></li>
+			
+        </ul>
+    </nav>
+
+
+<div class="login">
+
+<h1>Login As User</h1>
+
+<h4>Login Here</h4>
+
+<form action="login-user.php" method="POST">
+
+<label>Email</label>
+
+<input type="email" name="email" required>
+
+<label>Password</label>
+
+<input type="password" name="pass" required>
+<a href="s1.html"></a>
+
+<input type="Submit" name="Submit" value="Login">
+
+</form>
+<p>Not have an account ? <a href="res.html"> Signup here</a></p>
+<p>Login As Admin then  <a href="login.php"> click here</a></p>
+</body>
+</html>
+
+
+
+
+
+
+
